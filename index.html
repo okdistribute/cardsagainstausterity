@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title> Cards against Austerity </title>
+    <meta />
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" type="text/css" href="/tachyons.min.css"  />
+    <style>
+      body {
+        font-family: monospace;
+        background-color: pink;
+      }
+      #content {
+        background-color: white;
+      }
+      h1{
+        color: red;
+      }
+      a {
+        color: pink;
+      }
+      button {
+        font-family: monospace;
+        font-weight: bold;
+        padding: 20px;
+        background-color: #eee;
+        border: 1px solid black;
+        box-shadow: 2px 2px 0px 0px grey;
+        margin: 0px 2px 2px 0px;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
+      button:active{
+        margin: 2px 0px 0px 2px;
+        box-shadow: 0px 0px 0px 0px;
+        background-color: pink;
+      }
+      button:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content" class="ml4 mr4 flex flex-column">
+      <div class="w-50 m-auto">
+        <h1>Cards Against Austerity</h1>
+        <p>
+        An <i>unofficial</i> expansion pack for Cards Against Humanity.
+        </p>
+        <button type="submit" onclick="buyNow()">Buy now</button>
+        <p>
+          <span>for a low price of anywhere between $0 and $10,000,000,000</span>
+        </p>
+        <p>
+          Proceeds go towards fighting austerity and mitigating it's effects on vulnerable populations.
+          <br /><a href="#learn">learn more</a>
+        </p>
+        <div>
+          <img src="preview.jpg" />
+        </div>
+        <div id="learn" class="mt4">
+          <h2>What is Austerity?</h2>
+          <h2>Why should I care?</h2>
+          <h2>Where does the money go?</h2>
+          <p>Donations support coordinated direct action.</p>
+          <p>
+            The costs associated with public protest are a burden for those already struggling.
+            Your support will go toward travel, food, bail and lodging to remove financial barriers to activism for people buried in debt. In addition, the more money we have, the more organizers, strategists, technologists, lawyers, artists, and administrative staff we can pay for their hard and ongoing work.
+          </p>
+          <p>All donations are tax deductible.</p>
+          <p>
+            Things we've done in the past:
+          </p>
+          <ul>
+            <li>
+              <a href="https://rollingjubille.org">Bought Medial Debt and Erased it</a>
+            </li>
+            <li>
+              <a href="https://">Crashed an Austerity Party</a>
+            </li>
+            <li>
+              <a href="https://">Fought for Student Debtors</a>
+            </li>
+          </ul>
+          <h2>What is Cards Against Humanity?</h2>
+          <h2>How can I suggest new cards?</h2>
+          <p>
+            <a href="mailto:info@cardsagainsthumanity.org">Email us at info@cardsagainsthumanity.org</a>
+          </p>
+
+          <h2>Who are you?</h2>
+          <p>
+            We are the people behind the <a href="https://debtcollective.org">Debt Collective.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function buyNow () {
+      console.log('hi')
+      onSuccess()
+    }
+
+    function onSuccess () {
+      window.location.href = '/cards.pdf'
+    }
+  </script>
+</html>
