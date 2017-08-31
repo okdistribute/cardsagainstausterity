@@ -8,10 +8,14 @@
     <style>
       body {
         font-family: monospace;
-        background-color: pink;
+        font-size: 16px;
+      }
+      .header {
+        background-color: white;
       }
       #content {
-        background-color: white;
+        background-color: #ddd;
+        margin: auto;
       }
       h1{
         color: red;
@@ -19,6 +23,16 @@
       a {
         color: pink;
       }
+      #buynow {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px 0px;
+        color: black;
+        display: flex;
+        align-items: center;
+        background-color: white;
+      }
+
       button {
         font-family: monospace;
         font-weight: bold;
@@ -44,20 +58,24 @@
     </style>
   </head>
   <body>
-    <div id="content" class="ml4 mr4 flex flex-column">
-      <div class="w-50 m-auto">
+    <div id="content" class="flex flex-column w-90-ns">
+      <div class="header">
         <h1>Cards Against Austerity</h1>
+      </div>
+      <div class="center pl3 pr3 pl6-ns pr6-ns ">
         <p>
         An <i>unofficial</i> expansion pack for Cards Against Humanity.
         </p>
-        <button type="submit" onclick="buyNow()">Buy now</button>
-        <p>
-          <span>for a low price of anywhere between $0 and $10,000,000,000</span>
-        </p>
-        <p>
-          Proceeds go towards fighting austerity and mitigating it's effects on vulnerable populations.
-          <br /><a href="#learn">learn more</a>
-        </p>
+          <p>
+            Proceeds go towards fighting austerity and mitigating it's effects on vulnerable populations.
+            <a href="#learn">Learn more.</a>
+          </p>
+        <div id="buynow" class=" w-100">
+          <button class="w-50" type="submit" onclick="buyNow()">Buy now</button>
+          <p class="ml3 w-50">
+            for a low price anywhere between $0 and $10,000,000,000
+          </p>
+        </div>
         <div>
           <img src="preview.jpg" />
         </div>
